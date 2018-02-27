@@ -13,3 +13,8 @@ An arcade game from the HackVLC
 *  Sound effects: Freesound https://freesound.org/
 *  Music: Newgrounds https://www.newgrounds.com/audio/browse/genre/cinematic
 *  Map editor: Tiled http://www.mapeditor.org/
+
+## Branches
+
+*  General: ```hackerspace-platformer-#```
+*  Issue: ```hackerspace-platformer-issue-#```
