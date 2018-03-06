@@ -1,6 +1,10 @@
 # hackerspace-platformer
 An arcade game from the HackVLC
 
+## Default IDE
+
+Codeblocks: https://sourceforge.net/projects/codeblocks/
+
 
 ## Libraries
 
