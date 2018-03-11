@@ -21,7 +21,7 @@ LDFLAGS += -L"extern/lib/armhf32"
 endif
 
 # Global flags
-CFLAGS += -g -I"extern/include"
+CFLAGS += -g -I"extern/include" -I"."
 LDFLAGS += -lraylib -lglfw -lGL -lopenal -lm -lpthread -ldl -lBox2D -lX11
 CC := g++
 LD := g++
@@ -31,10 +31,10 @@ LD := g++
 all: hackerspace-platformer
 
 hackerspace-platformer: $(OBJ)
-	$(LD) -o bin/hackerspace-platformer_$(PLATFORM) bin/$(OBJ) $(LDFLAGS)
+	$(LD) -o bin/hackerspace-platformer_$(PLATFORM) $(OBJ) $(LDFLAGS)
 
 $(OBJ): $(SRC)
-	$(CC) -c $(SRC) $(CFLAGS) -o bin/$(OBJ)
+	$(CC) -c $(SRC) $(CFLAGS)
 
 clean:
 	$(shell find . -name '*.o' -delete)
